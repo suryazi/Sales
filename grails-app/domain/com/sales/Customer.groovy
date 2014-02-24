@@ -1,13 +1,13 @@
 package com.sales
 
-class Item {
+class Customer {
     
     String name
-    Integer price
+    String address
 
     static constraints = {
         name size:1..25, blank:false, unique:true
-        price min:1
+        address nullable:true
     }
     
     String toString(){

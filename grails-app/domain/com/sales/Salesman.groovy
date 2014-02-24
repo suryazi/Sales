@@ -1,14 +1,15 @@
 package com.sales
 
-class Item {
+class Salesman {
     
     String name
-    Integer price
+    String location
 
     static constraints = {
         name size:1..25, blank:false, unique:true
-        price min:1
+        location nullable:true
     }
+    static hasMany=[orders:Order]
     
     String toString(){
         "${name}"
