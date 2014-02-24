@@ -9,7 +9,7 @@ class Salesman {
         name size:1..25, blank:false, unique:true
         location nullable:true
     }
-    static hasMany=[orders:Order]
+    static hasMany=[orders:Orders]
     
     String toString(){
         "${name}"
